@@ -8,10 +8,11 @@ const InputField = ({ name, placeholder, defaultValue, ...rest }) => {
     <div>
       <Controller
         name={name}
-        placeholder={placeholder}
         control={control}
         defaultValue={defaultValue}
-        render={({ field }) => <input {...field} {...rest} />}
+        render={({ field }) => (
+          <input {...field} placeholder={placeholder} {...rest} />
+        )}
       />
     </div>
   );

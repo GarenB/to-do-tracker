@@ -15,8 +15,8 @@ const YourFormComponent = () => {
   return (
     <FormProvider {...methods}>
       <form onSubmit={handleSubmit(onSubmit)}>
-        <InputField name="firstName" placeHolder="First Name" defaultValue="" />
-        <InputField name="lastName" placeHolder="Last Name" defaultValue="" />
+        <InputField name="firstName" placeholder="First Name" defaultValue="" />
+        <InputField name="lastName" placeholder="Last Name" defaultValue="" />
         <button type="submit">Submit</button>
       </form>
     </FormProvider>

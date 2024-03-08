@@ -1,8 +1,14 @@
 import "./App.css";
-import YourFormComponent from "./components/reusable/form";
+import HomePage from "./pages/home";
+import Header from "./containers/header";
 
 const App = () => {
-  return <YourFormComponent />;
+  return (
+    <>
+      <Header />
+      <HomePage />
+    </>
+  );
 };
 
 export default App;

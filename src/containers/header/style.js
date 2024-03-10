@@ -29,7 +29,6 @@ export const HoverComponent = styled.div`
   top: 100%;
   left: 0;
   z-index: 999;
-  border: 1px solid #ccc;
   transition: height 0.5s ease-out;
 `;
 

@@ -1,4 +1,5 @@
 import { Container, Ul, Li, HoverComponent } from "./style";
+import SubSection from "../../components/header/sub-section";
 
 const Header = () => {
   return (
@@ -7,10 +8,15 @@ const Header = () => {
         <Li>
           one
           <HoverComponent>
-            <div>This is the hover component 1.</div>
+            <SubSection>one one</SubSection>
           </HoverComponent>
         </Li>
-        <Li>two</Li>
+        <Li>
+          two
+          <HoverComponent>
+            <SubSection>two one</SubSection>
+          </HoverComponent>
+        </Li>
         <Li>three</Li>
         <Li>four</Li>
         <Li>five</Li>

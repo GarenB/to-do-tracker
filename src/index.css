@@ -2,7 +2,6 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden; /* Prevents the background from overflowing */
-  background-color: black;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",

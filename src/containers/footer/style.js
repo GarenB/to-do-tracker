@@ -34,3 +34,9 @@ export const FooterList = styled.ul`
 export const FooterListItem = styled.li`
   color: #a1a1a6;
 `;
+
+export const BottomContainer = styled.div`
+  max-width: 1024px;
+  margin: 0 auto;
+  color: #6e6e63;
+`;

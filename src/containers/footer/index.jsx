@@ -5,6 +5,7 @@ import {
   FooterListItem,
   FooterHeader,
   FooterSection,
+  BottomContainer,
 } from "./style";
 
 const Footer = () => {
@@ -39,6 +40,9 @@ const Footer = () => {
           </FooterList>
         </FooterSection>
       </InnerContainer>
+      <BottomContainer>
+        Copyright © 2024 Hello Inc. All rights reserved.
+      </BottomContainer>
     </Container>
   );
 };

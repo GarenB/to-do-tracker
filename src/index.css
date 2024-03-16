@@ -1,9 +1,9 @@
+* {
+  font-family: Calibri, Monaco, Consolas, "Courier New", monospace;
+}
+
 body {
   margin: 0;
   padding: 0;
   overflow: hidden; /* Prevents the background from overflowing */
-}
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
 }

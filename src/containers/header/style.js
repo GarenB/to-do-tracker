@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import { StyledLink } from "../../components/reusable/styles";
+
 export const Container = styled.div`
   position: relative;
   background-color: red;
@@ -44,4 +46,35 @@ export const Li = styled.li`
   &:hover ${HoverComponent} {
     height: 400px;
   }
+`;
+
+export const LoginButtonContainer = styled.div`
+  display: inline-block;
+  margin-right: 10px;
+  cursor: pointer;
+  margin: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const LoginButton = styled(StyledLink)`
+  width: 70px;
+  background-color: #ccc;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 30px;
+  background-color: #0095f6;
+  font: 14px;
+`;
+
+export const SignupButtonContainer = styled.div`
+  display: inline-block;
+  margin-right: 10px;
+  cursor: pointer;
+  margin: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0095f6;
 `;

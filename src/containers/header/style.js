@@ -78,3 +78,7 @@ export const SignupButtonContainer = styled.div`
   justify-content: center;
   color: #0095f6;
 `;
+
+export const SignUpButton = styled(StyledLink)`
+  color: #0095f6;
+`;

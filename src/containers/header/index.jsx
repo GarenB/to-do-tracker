@@ -6,6 +6,7 @@ import {
   LoginButtonContainer,
   SignupButtonContainer,
   LoginButton,
+  SignUpButton,
 } from "./style";
 import SubSection from "../../components/header/sub-section";
 
@@ -34,7 +35,7 @@ const Header = () => {
           <LoginButton to="/login">Log in</LoginButton>
         </LoginButtonContainer>
         <SignupButtonContainer>
-          <a>Sign up</a>
+          <SignUpButton to="/signup">Sign up</SignUpButton>
         </SignupButtonContainer>
       </Ul>
     </Container>

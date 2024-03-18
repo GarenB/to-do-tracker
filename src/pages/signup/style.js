@@ -13,7 +13,8 @@ export const FormWrapper = styled.div`
 `;
 
 export const FormContainer = styled.div`
-  width: 50%;
+  width: 20%;
+  height: 60%
   background-color: #ccc;
   border-radius: 10px;
   text-align: center;

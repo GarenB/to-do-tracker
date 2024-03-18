@@ -7,6 +7,7 @@ const SignUpPage = () => {
     <Container>
       <FormWrapper>
         <FormContainer>
+          Sign up to see...
           <SignUpForm />
         </FormContainer>
       </FormWrapper>

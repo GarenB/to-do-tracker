@@ -1,10 +1,15 @@
 import React from "react";
 import { useForm, FormProvider } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
 import InputField from "../../reusable/input-field";
 import signUpApi from "../../../api/account/signup";
+import signUpValidationSchema from "../../../validation/sign-up";
 
 const SignUpForm = () => {
-  const methods = useForm();
+  const methods = useForm({
+    resolver: yupResolver(signUpValidationSchema),
+  });
+
   const { handleSubmit } = methods;
 
   const onSubmit = async (data) => {
@@ -20,11 +25,11 @@ const SignUpForm = () => {
         <InputField name="email" placeholder="Email" defaultValue="" />
         <InputField name="username" placeholder="Username" defaultValue="" />
         <InputField name="password" placeholder="Password" defaultValue="" />
-        {/* <InputField
-          name="confirm-password"
+        <InputField
+          name="confirmPassword"
           placeholder="Confirm Password"
           defaultValue=""
-        /> */}
+        />
         <button type="submit">Submit</button>
       </form>
     </FormProvider>

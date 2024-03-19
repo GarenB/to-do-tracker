@@ -11,8 +11,8 @@ const signUpValidationSchema = yup.object().shape({
     .required("Password is required"),
   confirmPassword: yup
     .string()
-    .min(6, "Password must be at least 6 characters")
-    .required("Password is required"),
+    .oneOf([yup.ref("password"), ""], "Passwords must match")
+    .required("Confirm Password is required"),
 });
 
 export default signUpValidationSchema;

@@ -1,14 +1,16 @@
 import SignUpForm from "../../components/forms/signup-form";
 
-import { Container, FormWrapper, FormContainer } from "./style";
+import { Container, FormWrapper, FormContainer, InnerContainer } from "./style";
 
 const SignUpPage = () => {
   return (
     <Container>
       <FormWrapper>
         <FormContainer>
-          Sign up to see...
-          <SignUpForm />
+          Sign up form
+          <InnerContainer>
+            <SignUpForm />
+          </InnerContainer>
         </FormContainer>
       </FormWrapper>
     </Container>

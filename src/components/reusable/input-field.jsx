@@ -1,6 +1,8 @@
 import React from "react";
 import { useFormContext, Controller } from "react-hook-form";
 
+import { OuterContainer, InnerContainer, StyledInputField } from "./styles";
+
 const InputField = ({ name, placeholder, defaultValue, ...rest }) => {
   const {
     control,
@@ -8,19 +10,19 @@ const InputField = ({ name, placeholder, defaultValue, ...rest }) => {
   } = useFormContext();
 
   return (
-    <div>
+    <OuterContainer>
       <Controller
         name={name}
         control={control}
         defaultValue={defaultValue}
         render={({ field }) => (
-          <>
-            <input {...field} placeholder={placeholder} {...rest} />
+          <InnerContainer>
+            <StyledInputField {...field} placeholder={placeholder} {...rest} />
             {errors[name] && <span>{errors[name].message}</span>}{" "}
-          </>
+          </InnerContainer>
         )}
       />
-    </div>
+    </OuterContainer>
   );
 };
 

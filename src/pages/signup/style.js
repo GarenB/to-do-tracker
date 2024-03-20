@@ -22,3 +22,9 @@ export const FormContainer = styled.div`
   background-color: #0095f6;
   font: 14px;
 `;
+
+export const InnerContainer = styled.div`
+  justify-content: center;
+  display: flex;
+  align-items: center;
+`;

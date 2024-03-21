@@ -13,13 +13,12 @@ export const FormWrapper = styled.div`
 `;
 
 export const FormContainer = styled.div`
-  width: 20%;
+  width: 19%;
   height: 60%
   background-color: #ccc;
-  border-radius: 10px;
-  text-align: center;
+  border-radius: 5px;
   line-height: 30px;
-  background-color: #0095f6;
+  border: 1px solid grey;
   font: 14px;
 `;
 

@@ -10,7 +10,7 @@ export const InnerContainer = styled.div`
   display: flex;
   flex-direction: column;
   color: red;
-  font-size: 15px;
+  font-size: 12px;
 `;
 
 export const OuterContainer = styled.div`

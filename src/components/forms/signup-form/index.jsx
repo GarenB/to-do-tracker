@@ -4,6 +4,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import InputField from "../../reusable/input-field";
 import signUpApi from "../../../api/account/signup";
 import signUpValidationSchema from "../../../validation/sign-up";
+import { SubmitButtonContainer, SubmitButton } from "./style";
 
 const SignUpForm = () => {
   const methods = useForm({
@@ -30,7 +31,9 @@ const SignUpForm = () => {
           placeholder="Confirm Password"
           defaultValue=""
         />
-        <button type="submit">Submit</button>
+        <SubmitButtonContainer>
+          <SubmitButton type="submit">Sign Up</SubmitButton>
+        </SubmitButtonContainer>
       </form>
     </FormProvider>
   );

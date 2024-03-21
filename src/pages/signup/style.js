@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  height: 500px;
+  height: 700px;
 `;
 
 export const FormWrapper = styled.div`
@@ -13,17 +13,24 @@ export const FormWrapper = styled.div`
 `;
 
 export const FormContainer = styled.div`
-  width: 19%;
+  width: 300px;
   height: 60%
   background-color: #ccc;
   border-radius: 5px;
   line-height: 30px;
   border: 1px solid grey;
   font: 14px;
+  padding: 20px;
 `;
 
 export const InnerContainer = styled.div`
   justify-content: center;
   display: flex;
   align-items: center;
+`;
+
+export const Title = styled.div`
+  justify-content: center;
+  font-size: 25px;
+  display: flex;
 `;

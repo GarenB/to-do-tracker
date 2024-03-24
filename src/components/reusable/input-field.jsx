@@ -17,7 +17,12 @@ const InputField = ({ name, placeholder, defaultValue, ...rest }) => {
         defaultValue={defaultValue}
         render={({ field }) => (
           <InnerContainer>
-            <StyledInputField {...field} placeholder={placeholder} {...rest} />
+            <StyledInputField
+              {...field}
+              placeholder={placeholder}
+              hasError={errors[name]}
+              {...rest}
+            />
             {errors[name] && <span>{errors[name].message}</span>}{" "}
           </InnerContainer>
         )}

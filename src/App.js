@@ -5,7 +5,7 @@ import "./App.css";
 
 //pages
 import HomePage from "./pages/home";
-import LoginPage from "./pages/login";
+import SignInPage from "./pages/singin";
 import SignUpPage from "./pages/signup";
 import NotFoundPage from "./pages/not-found";
 
@@ -19,7 +19,7 @@ const App = () => {
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/login" element={<LoginPage />} />
+        <Route path="/signin" element={<SignInPage />} />
         <Route path="/signup" element={<SignUpPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>

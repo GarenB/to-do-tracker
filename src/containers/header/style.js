@@ -48,7 +48,7 @@ export const Li = styled.li`
   }
 `;
 
-export const LoginButtonContainer = styled.div`
+export const SigninButtonContainer = styled.div`
   display: inline-block;
   margin-right: 10px;
   cursor: pointer;
@@ -58,7 +58,7 @@ export const LoginButtonContainer = styled.div`
   justify-content: center;
 `;
 
-export const LoginButton = styled(StyledLink)`
+export const SigninButton = styled(StyledLink)`
   width: 70px;
   background-color: #ccc;
   border-radius: 10px;

@@ -3,9 +3,9 @@ import {
   Ul,
   Li,
   HoverComponent,
-  LoginButtonContainer,
+  SigninButtonContainer,
   SignupButtonContainer,
-  LoginButton,
+  SigninButton,
   SignUpButton,
 } from "./style";
 import SubSection from "../../components/header/sub-section";
@@ -31,9 +31,9 @@ const Header = () => {
         <Li>five</Li>
         <Li>six</Li>
         <Li>eight</Li>
-        <LoginButtonContainer>
-          <LoginButton to="/login">Log in</LoginButton>
-        </LoginButtonContainer>
+        <SigninButtonContainer>
+          <SigninButton to="/signin">Log in</SigninButton>
+        </SigninButtonContainer>
         <SignupButtonContainer>
           <SignUpButton to="/signup">Sign up</SignUpButton>
         </SignupButtonContainer>

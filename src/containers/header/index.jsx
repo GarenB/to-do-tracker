@@ -9,16 +9,14 @@ import {
   SignUpButton,
 } from "./style";
 import SubSection from "../../components/header/sub-section";
+import { StyledLink } from "../../components/reusable/styles";
 
 const Header = () => {
   return (
     <Container>
       <Ul>
         <Li>
-          one
-          <HoverComponent>
-            <SubSection>one one</SubSection>
-          </HoverComponent>
+          <StyledLink to="/">Home</StyledLink>
         </Li>
         <Li>
           two

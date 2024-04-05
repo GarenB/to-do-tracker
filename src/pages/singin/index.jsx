@@ -1,24 +1,12 @@
 import SignInForm from "../../components/forms/singin-form";
+import FormContainer from "../../containers/form";
 
-import {
-  Container,
-  FormWrapper,
-  FormContainer,
-  InnerContainer,
-  Title,
-} from "./style";
+import { Container } from "./style";
 
 const SignInPage = () => {
   return (
     <Container>
-      <FormWrapper>
-        <FormContainer>
-          <Title>Login form</Title>
-          <InnerContainer>
-            <SignInForm />
-          </InnerContainer>
-        </FormContainer>
-      </FormWrapper>
+      <FormContainer title="Login form" form={<SignInForm />} />;
     </Container>
   );
 };

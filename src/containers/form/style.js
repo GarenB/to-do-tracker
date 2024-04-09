@@ -18,7 +18,7 @@ export const FormContainerStyle = styled.div`
   background-color: #ccc;
   border-radius: 5px;
   line-height: 30px;
-  border: 1px solid grey;
+  border: 1px solid #ccc;
   font: 14px;
   padding: 20px;
 `;

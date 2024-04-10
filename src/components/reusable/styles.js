@@ -21,4 +21,5 @@ export const StyledInputField = styled.input`
   height: 36px;
   width: 268px;
   border: 1px solid ${({ hasError }) => (hasError ? "red" : "#ccc")};
+  padding-left: 10px;
 `;

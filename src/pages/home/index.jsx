@@ -1,5 +1,7 @@
+import TasksContainer from "../../containers/tasks-container";
+
 const HomePage = () => {
-  return <div>heyy</div>;
+  return <TasksContainer />;
 };
 
 export default HomePage;

@@ -1,17 +1,32 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 import AddTaskForm from "../forms/add-task-form";
 import { AddTaskContainer, AddTaskButton } from "./styles";
 
 const AddTask = () => {
-  const [isFormVisible, setIFormVisible] = useState(false);
+  const [isFormVisible, setIsFormVisible] = useState(false);
+
+  const outerDivRef = useRef(null);
 
   const handleClick = () => {
-    setIFormVisible(true);
+    setIsFormVisible(true);
   };
 
+  const handleClickOutside = (event) => {
+    if (outerDivRef.current && !outerDivRef.current.contains(event.target)) {
+      setIsFormVisible(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("click", handleClickOutside);
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, []);
+
   return (
-    <div>
+    <div ref={outerDivRef}>
       <AddTaskButton onClick={handleClick}>Add Task</AddTaskButton>
       <AddTaskContainer isFormVisible={isFormVisible}>
         <AddTaskForm />

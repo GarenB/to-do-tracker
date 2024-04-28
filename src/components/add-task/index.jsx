@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 
 import AddTaskForm from "../forms/add-task-form";
-import { AddTaskContainer, AddTaskButton } from "./styles";
+import { AddTaskContainer, AddTaskButton, Container } from "./styles";
 
 const AddTask = () => {
   const [isFormVisible, setIsFormVisible] = useState(false);
@@ -26,12 +26,12 @@ const AddTask = () => {
   }, []);
 
   return (
-    <div ref={outerDivRef}>
+    <Container ref={outerDivRef}>
       <AddTaskButton onClick={handleClick}>Add Task</AddTaskButton>
       <AddTaskContainer isFormVisible={isFormVisible}>
         <AddTaskForm />
       </AddTaskContainer>
-    </div>
+    </Container>
   );
 };
 

@@ -4,7 +4,8 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import InputField from "../../reusable/input-field";
 import signInApi from "../../../api/account/signin";
 import signInValidationSchema from "../../../validation/sign-in";
-import { SubmitButtonContainer, SubmitButton } from "./style";
+import StyledButton from "../../reusable/button";
+import { SubmitButtonContainer } from "./style";
 
 const AddTaskForm = () => {
   const methods = useForm({
@@ -22,7 +23,7 @@ const AddTaskForm = () => {
       <form onSubmit={handleSubmit(onSubmit)}>
         <InputField name="title" placeholder="Title" defaultValue="" />
         <SubmitButtonContainer>
-          <SubmitButton type="submit">Save</SubmitButton>
+          <StyledButton title="Save" />
         </SubmitButtonContainer>
       </form>
     </FormProvider>

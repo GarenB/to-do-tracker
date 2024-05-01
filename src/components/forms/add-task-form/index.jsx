@@ -5,7 +5,7 @@ import InputField from "../../reusable/input-field";
 import signInApi from "../../../api/account/signin";
 import signInValidationSchema from "../../../validation/sign-in";
 import StyledButton from "../../reusable/button";
-import { SubmitButtonContainer } from "./style";
+import { SubmitButtonContainer, Container } from "./style";
 
 const AddTaskForm = () => {
   const methods = useForm({
@@ -21,10 +21,12 @@ const AddTaskForm = () => {
   return (
     <FormProvider {...methods}>
       <form onSubmit={handleSubmit(onSubmit)}>
-        <InputField name="title" placeholder="Title" defaultValue="" />
-        <SubmitButtonContainer>
-          <StyledButton title="Save" />
-        </SubmitButtonContainer>
+        <Container>
+          <InputField name="title" placeholder="Title" defaultValue="" />
+          <SubmitButtonContainer>
+            <StyledButton title="Save" />
+          </SubmitButtonContainer>
+        </Container>
       </form>
     </FormProvider>
   );

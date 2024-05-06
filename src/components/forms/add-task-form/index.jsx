@@ -2,20 +2,20 @@ import React from "react";
 import { useForm, FormProvider } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import InputField from "../../reusable/input-field";
-import signInApi from "../../../api/account/signin";
-import signInValidationSchema from "../../../validation/sign-in";
+import createTaskApi from "../../../api/task/create";
+import createTaskValidationSchema from "../../../validation/task";
 import StyledButton from "../../reusable/button";
 import { SubmitButtonContainer, Container } from "./style";
 
 const AddTaskForm = () => {
   const methods = useForm({
-    resolver: yupResolver(signInValidationSchema),
+    resolver: yupResolver(createTaskValidationSchema),
   });
 
   const { handleSubmit } = methods;
 
   const onSubmit = async (data) => {
-    // await signInApi(data);
+    await createTaskApi(data);
   };
 
   return (

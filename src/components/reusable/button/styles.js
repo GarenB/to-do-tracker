@@ -1,12 +1,16 @@
 import styled from "styled-components";
 import { StyledLink } from "../styles";
 
-export const Button = styled(StyledLink)`
+export const Button = styled.button`
+  display: flex;
   width: 70px;
-  background-color: #ccc;
   border-radius: 10px;
-  text-align: center;
-  line-height: 30px;
+  border: none;
   background-color: #0095f6;
-  font: 14px;
+  color: white;
+  height: 32px;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 15px;
 `;
